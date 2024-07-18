@@ -1,0 +1,6 @@
+com\mycompany\mycart\entities\Product.class
+com\mycompany\mycart\helper\FactoryProvider.class
+com\mycompany\mycart\resources\JakartaEE10Resource.class
+com\mycompany\mycart\entities\User.class
+com\mycompany\mycart\JakartaRestConfiguration.class
+com\mycompany\mycart\entities\Category.class
