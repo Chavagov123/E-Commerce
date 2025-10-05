@@ -1,0 +1,21 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# NetBeans
+nb-configuration.xml
+nbactions.xml
+build/
+dist/
+nbproject/private/
+
+# Misc
+.DS_Store
+*.war
+*.jar
