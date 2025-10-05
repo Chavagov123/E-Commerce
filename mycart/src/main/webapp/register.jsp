@@ -28,8 +28,9 @@
             <div class="col-md-4 offset-md-4">
                 <div class="card">
                     <div class="card-body px-5 py-5">
+                        <%@include file="components/message.jsp" %>
                         <h3 class="text-center mb-5">Sign up here</h3>
-                        <form action="/action_page.php">
+                        <form action="RegisterServlet" method="post">
                             <!-- Name -->
                             <div class="mb-3 input-group">
                                 <div class="input-group-prepend">
@@ -37,7 +38,7 @@
                                         <i class="fa fa-user fa-lg fa-fw"></i>
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                <input name="user_name" type="text" class="form-control" id="name" placeholder="Enter your name" required>
                             </div> 
                             
                             <!-- Email -->
@@ -47,7 +48,7 @@
                                         <i class="fa fa-envelope fa-lg fa-fw"></i>
                                     </span>
                                 </div>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+                                <input name="user_email" type="email" class="form-control" id="email" placeholder="Enter your Email" required>
                             </div> 
                             
                             <!-- Password -->
@@ -57,7 +58,7 @@
                                         <i class="fa fa-key fa-lg fa-fw"></i>
                                     </span>
                                 </div>
-                                <input type="password" class="form-control" id="password" placeholder="Enter your Password">
+                                <input name="user_password" type="password" class="form-control" id="password" placeholder="Enter your Password" required>
                             </div> 
                             
                             <!-- Phone Number -->
@@ -67,18 +68,18 @@
                                         <i class="fa fa-phone fa-lg fa-fw"></i>
                                     </span>
                                 </div>
-                                <input type="number" class="form-control" id="phone" placeholder="Enter your Phone Number">
+                                <input name="user_phone" type="number" class="form-control" id="phone" placeholder="Enter your Phone Number" required>
                             </div> 
                             
                             <!-- Address -->
                             <div class="mb-3">
-                                <textarea style="height:200px;" class="form-control" placeholder="Enter your Address"></textarea>
+                                <textarea name="user_address" style="height:200px;" class="form-control" placeholder="Enter your Address" required></textarea>
                             </div> 
                             
                             <!-- Buttons -->
                             <div class="container text-center">
-                                <button class="btn btn-outline-success">Register</button>
-                                <button class="btn btn-outline-warning">Reset</button>
+                                <button type="submit" class="btn btn-outline-success">Register</button>
+                                <button type="reset" class="btn btn-outline-warning">Reset</button>
                             </div>
                         </form>
                     </div>
